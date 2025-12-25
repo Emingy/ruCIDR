@@ -676,7 +676,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "ru-addr-mirkotik-updater"
+name = "ruCIDR"
 version = "0.1.0"
 dependencies = [
  "reqwest",
