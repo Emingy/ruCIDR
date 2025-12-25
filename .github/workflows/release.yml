@@ -23,7 +23,7 @@ jobs:
         run: |
           mkdir -p dist
           cargo build --release --target x86_64-unknown-linux-gnu
-          cp target/x86_64-unknown-linux-gnu/release/mycli dist/mycli-x86_64-unknown-linux-gnu
+          cp target/x86_64-unknown-linux-gnu/release/ruCIDR dist/ruCIDR-x86_64-unknown-linux-gnu
 
       - name: Upload artifact
         id: upload
@@ -53,7 +53,7 @@ jobs:
             echo "Skipping macOS build (only ARM supported)"
           else
             cargo build --release --target aarch64-apple-darwin
-            cp target/aarch64-apple-darwin/release/mycli dist/mycli-aarch64-apple-darwin
+            cp target/aarch64-apple-darwin/release/ruCIDR dist/ruCIDR-aarch64-apple-darwin
           fi
 
       - name: Upload artifact
